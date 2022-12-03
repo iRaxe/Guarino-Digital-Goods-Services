@@ -1,0 +1,25 @@
+<style>
+.content {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.value {
+  font-size: {{ properties.grid_Text_title_size }}px;
+  display: block;
+  font-weight: 900;
+  color: #7040F2;
+}
+
+.content h2{
+  align-items: center;
+  font-size: {{ properties.grid_Text_description_size }}px;
+  color: #fff;
+}
+
+</style>
+<div class="content">
+  <div class="value" valore="{{ properties.grid_Text_title }}">0</div>
+  <h2>{{ properties.grid_Text_description }}</h2>
+</div>
