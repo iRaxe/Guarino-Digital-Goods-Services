@@ -12,12 +12,6 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
-.sellix-card-image{
-    min-height: 0px!important;
-    width: auto!important;
-    display: none!important;
-    height: 550px!important;
-}
   .Noncapiscotuttiquesticontainer:has(.sellix-block):first-child {
    display: grid!important;
    max-width: 1150px;
