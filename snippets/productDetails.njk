@@ -49,12 +49,8 @@
   <div class="shop-product-info-product-rating">
     {% if product.sold_count %}
       <span style="white-space: nowrap">
-          {% render_snippet 'Rating star',
-          rating = product.average_score or 4,
-          iconsCount = 5 %}
-          {% if product.average_score %}
-            {{product.average_score | float | round(1)}}
-          {% endif %}
+          {% render_snippet 'Rating star', rating = product.average_score or 4, iconsCount = 5 %}
+          
       </span>
     {% endif %}
   </div>
