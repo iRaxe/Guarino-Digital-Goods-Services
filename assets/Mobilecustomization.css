@@ -12,6 +12,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
   .Noncapiscotuttiquesticontainer:has(.sellix-block):first-child {
    display: grid!important;
    max-width: 1150px;
