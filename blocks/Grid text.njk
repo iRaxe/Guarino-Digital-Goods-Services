@@ -4,6 +4,17 @@
   justify-content: space-around;
   align-items: center;
 }
+{% if properties.grid_suffix_title %}
+  {% if properties.grid_suffix_title_after %}
+    .value:after {
+    content: "{{ properties.grid_suffix_title }}";
+    }
+  {% else %}
+    .value:before {
+    content: "{{ properties.grid_suffix_title }}";
+    }
+  {% endif %}
+{% endif %}
 
 .value {
   font-size: {{ properties.grid_Text_title_size }}px;
@@ -20,6 +31,6 @@
 
 </style>
 <div class="content">
-  <div class="value" valore="{{ properties.grid_Text_title }}">0</div>
+   <div class="value" valore="{{ properties.grid_Text_title }}">0</div>
   <h2>{{ properties.grid_Text_description }}</h2>
 </div>
