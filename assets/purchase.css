@@ -208,7 +208,7 @@
 }
 .sellix-product-card {
   width: 100%;
-  
+
   border: 0px solid var(--borderColor);
   transition: height 10s ease-in-out, min-height 10s ease-in-out;
   background: #150d2a;

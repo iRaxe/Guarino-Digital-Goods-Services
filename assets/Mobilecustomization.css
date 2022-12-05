@@ -57,8 +57,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    header{
+    .sellix-menu{
         display: none!important;
+    }
+    header{
+        background: linear-gradient(-90deg, #000000 0%, #160e2c 100%)!important;
     }
     
     canvas{
@@ -212,10 +215,10 @@
         display: flex;
         width: 40px;
         height: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
         position: relative;
         background: #ffffff;
-        border-radius: 3px;
+        
         z-index: 3;
         transform-origin: 5px 0px;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -251,7 +254,7 @@
         position: absolute;
     height: 100%;
     box-shadow: 0 0 10px #85888c;
-    margin: -50px 0 0 -70px;
+    margin: -50px 0 0 -135px;
     padding: 50px 30px 500px 60px;
         z-index:3;
         padding-top: 125px;

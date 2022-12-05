@@ -1,3 +1,17 @@
+.divnav{
+  display: none;
+}
+
+.sellix-discord-button{
+  width: 585px;
+  margin-top: 20px;
+}
+
+.sellix-discord-button > img {
+    max-width: 250px;
+    padding: 10px;
+}
+
 .feedbackaverage {
   display: inline-block;
   justify-content: space-around;
