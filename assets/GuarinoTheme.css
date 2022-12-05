@@ -1,0 +1,53 @@
+.feedbackaverage {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feedbackaverage h2{
+  margin-top: 25px;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.Productssold {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Productssold h2{
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.valueofproductssold {
+  font-size: 44px;
+  display: block;
+  font-weight: 900;
+  color: #7040F2;
+}
+
+.gridtextcontent {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gridtextcontent h2{
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.value {
+  font-size: 44px;
+  display: block;
+  font-weight: 900;
+  color: #7040F2;
+}
+
+
+

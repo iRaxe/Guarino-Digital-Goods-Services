@@ -1,40 +1,47 @@
 {% set shop = global.common.shopInfo.shop %}
 {% set average_score = shop.average_score if shop.average_score else 0 %}
 
-<div class="sellix-banner-feedback">
+<style>
+.content {
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.value {
+  font-size: {{ properties.grid_Text_title_size }}px;
+  display: block;
+  font-weight: 900;
+  color: #7040F2;
+}
+
+.content h2{
+  align-items: center;
+  font-size: {{ properties.grid_Text_description_size }}px;
+  color: #fff;
+}
+
+</style>
+
+<div class="content">
   {% if properties.show_banner_products_sold %}
-    <div>
       {% if not shop.hide_products_sold %}
-        <div>Products Sold</div>
-
-        <div class="sellix-banner-feedback-count">
-          {{shop.products_sold_count}}
-        </div>
+      <div class="value" valore="{{shop.products_sold_count}}">0</div>
+      <h2>Products Sold</h2>
       {% endif %}
-    </div>
   {% endif %}
+</div>
 
+<div class="content">
   {% if properties.show_banner_product_quality %}
-    <div>
-      <div>Product Quality</div>
-
-      <div class="sellix-banner-feedback-star">
-        <span>
           {% if average_score | float >= 4.95 %}
-            5
+            <div class="value" valore="5">0</div>
           {% else %}
-            {{ average_score | float | round(1) }}
-          {% endif%}
-        </span>
-
+          <div class="value" valore="{{ average_score | float | round(1) }}">5</div>
+          {% endif %}
         <a href="/feedback">
-          {% render_snippet 'Rating star', rating=average_score %}
-
-          <i>
-            ({{[shop.feedback.total, ' reviews'] | join if shop.feedback else 'No reviews'}})
-          </i>
+        {% render_snippet 'Rating star', rating=average_score %}
         </a>
-      </div>
-    </div>
+        <h2>Feedback average</h2>
   {% endif %}
 </div>
