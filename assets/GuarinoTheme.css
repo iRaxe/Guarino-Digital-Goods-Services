@@ -19,11 +19,6 @@
     display: none;
   }
 
-  .sellix-section.sellix-menu-container {
-    display: none !important;
-  }
-
-
   .sellix-header-in {
     position: relative;
     left: 0;

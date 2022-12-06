@@ -11,11 +11,10 @@
         {% for block_name in settings.block_order %}
             {%- render_block block_name -%}
             {% endfor%}
-            <div
-               class="footer-text-custom"
-               style="text-align: center; color: #C5C2D0;">
-                 {{ properties.footer_text | safe }}
+            <div class="footer-text-custom" style="text-align: center; color: #C5C2D0;">
+                 {{ properties.footer_text | safe }}       
             </div>
+
         </div>
 
     </footer>
