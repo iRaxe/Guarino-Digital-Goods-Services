@@ -4,61 +4,12 @@
     height: 550px!important;
 }
 }
-
-@media screen and (min-width: 800px) {
-
-.sellix-header {
-    height: 100px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .Noncapiscotuttiquesticontainer:has(.sellix-block):first-child {
-   display: grid!important;
-   max-width: 1150px;
-   grid-template-columns: auto auto;
-   column-gap: 15px!important;
-   row-gap: 15px!important;
-   justify-content:center!important;
-  }  
-  
-  canvas{
-    display: none;
-  }
-
-  .sellix-section.sellix-menu-container{
-    display: none!important;
-  }
-
-
-  .sellix-header-in {
-    position: relative;
-    left: 0;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;    
-  }
-  
-  .sellix-input{
-    border: 0px!important;
-    background:#32285b!important;
-
-  }
-
-  header{
-        background: linear-gradient(-90deg, #000000 0%, #160e2c 100%)!important;
-        height: 100px!important;
-  }
-
-  .sellix-template{
-    background: linear-gradient(269deg, #000000 0%, #160e2c 100%)!important;
-  }
-}
-
 @media only screen and (max-width: 600px) {
     .sellix-menu{
         display: none!important;
+    }
+    h2{
+        font-size: 2.6em!important;
     }
     header{
         background: linear-gradient(-90deg, #000000 0%, #160e2c 100%)!important;
@@ -80,11 +31,6 @@
     .bannertext p {
         font-size: 4em !important;
         line-height: 1em;
-    }
-
-    .sellix-grid{
-        margin: 0 15px!important;
-        grid-template-columns: auto auto!important;
     }
     
     .sellix-product-list-header {
@@ -110,9 +56,11 @@
     .fa-brands{
         font-size: 30px;
     }
+    
     .sellix-grid-socials{
-        grid-template-columns: auto auto auto!important;
         margin-top: 1.5em!important;
+        flex-wrap: wrap;
+        padding: 0px 70px;
     }   
     .sellix-footer-v2{
         height: 100%!important;
